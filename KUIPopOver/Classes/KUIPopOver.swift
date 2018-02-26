@@ -112,6 +112,7 @@ extension KUIPopOverUsable where Self: UIViewController {
     
     public func setupPopover(barButtonItem: UIBarButtonItem) {
         setup()
+        popoverPresentationController?.backgroundColor = popOverBackgroundColor
         popoverPresentationController?.barButtonItem = barButtonItem
     }
     
