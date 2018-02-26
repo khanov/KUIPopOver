@@ -114,6 +114,7 @@ extension KUIPopOverUsable where Self: UIViewController {
         setup()
         popoverPresentationController?.backgroundColor = popOverBackgroundColor
         popoverPresentationController?.barButtonItem = barButtonItem
+        popoverPresentationController?.permittedArrowDirections = .up
     }
     
     public func showPopover(sourceView: UIView, sourceRect: CGRect? = nil) {
